@@ -1,10 +1,35 @@
-import { CORE_CONCEPTS } from "./data";
+import { useState } from "react";
+
+import { CORE_CONCEPTS, EXAMPLES } from "./data";
 
 import { Header } from "./components/Header/Header";
 import { CoreConcept } from "./components/CoreConcept";
 import { TabButton } from "./components/TabButton";
 
 function App() {
+  const [selectedTopic, setSelectedTopic] = useState();
+
+  function selectHandler(selectedButton) {
+    setSelectedTopic(selectedButton);
+  }
+
+  let tabContent = <p>Please select a topic.</p>;
+
+  if (selectedTopic) {
+    tabContent = (
+      <div id="tab-content">
+        <h3>{EXAMPLES[selectedTopic].title}</h3>
+        <p>{EXAMPLES[selectedTopic].description}</p>
+        <pre>
+          <code>{EXAMPLES[selectedTopic].code}</code>
+        </pre>
+      </div>
+    );
+  }
+
+  if (selectedTopic) {
+  }
+
   return (
     <div>
       <Header />
@@ -25,11 +50,14 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton>Components</TabButton>
-            <TabButton>JSX</TabButton>
-            <TabButton>Props</TabButton>
-            <TabButton>State</TabButton>
+            <TabButton onSelect={() => selectHandler("components")}>
+              Components
+            </TabButton>
+            <TabButton onSelect={() => selectHandler("jsx")}>JSX</TabButton>
+            <TabButton onSelect={() => selectHandler("props")}>Props</TabButton>
+            <TabButton onSelect={() => selectHandler("state")}>State</TabButton>
           </menu>
+          {tabContent}
         </section>
       </main>
     </div>
