@@ -1,6 +1,6 @@
 ## About The Project
 
-This repository contains a comprehensive exercise set covering section 3 of the Udemy course, "React - The Complete Guide 2023 (incl React Router & Redux)" instructed by Maximilian Schwarzmüller. The content is up-to-date as of October 2023.
+This repository contains a comprehensive exercise set covering section 3 to 4 of the Udemy course, "React - The Complete Guide 2023 (incl React Router & Redux)" instructed by Maximilian Schwarzmüller. The content is up-to-date as of October 2023.
 
 - [Udemy Instructor](https://www.udemy.com/user/maximilian-schwarzmuller/)
 - [Udemy Course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
