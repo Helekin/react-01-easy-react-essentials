@@ -1,6 +1,6 @@
 ## About The Project
 
-This repository contains a comprehensive exercise set covering section 3 to 4 of the Udemy course, "React - The Complete Guide 2023 (incl React Router & Redux)" instructed by Maximilian Schwarzmüller. The content is up-to-date as of October 2023.
+This repository contains a comprehensive exercise set that covers sections 3 to 4 of the Udemy course 'React - The Complete Guide 2023 (incl. React Router & Redux),' instructed by Maximilian Schwarzmüller. It delves into various important foundational topics of React, including Components, JSX, Props, and States, and is up-to-date as of October 2023.
 
 - [Udemy Instructor](https://www.udemy.com/user/maximilian-schwarzmuller/)
 - [Udemy Course](https://www.udemy.com/course/react-the-complete-guide-incl-redux/)
@@ -9,25 +9,23 @@ This repository contains a comprehensive exercise set covering section 3 to 4 of
 
 ### Prerequisites
 
-- Use any code editor
+- You can use any code editor for this project.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository:
 
 ```sh
 git clone https://github.com/Helekin/react-01-easy-react-essentials.git
 ```
 
-2. Create your .env file and use your credentials (optional)
-
-3. Install dependencies
+2. Install project dependencies:
 
 ```sh
 npm install
 ```
 
-4. Runs the app in the development mode
+3. To run the app in development mode:
 
 ```sh
 npm run dev
